@@ -1,0 +1,526 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB | Account</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/shorticon/favicon.ico" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  </head>
+  
+  <body>
+    <div class="lds-dual-ring"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="index.html"><img style="width: 80%;"
+              src="./assets/images/logos/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+              alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse" id="navbarSupportedContent">
+            <!-- *************** -->
+            <div class="offcanvas offcanvas-start" id="offcanvasScrolling">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Offcanvas with backdrop</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      data-bs-hover="dropdown" aria-expanded="false" style="color: white;" aria-current="page"
+                      href="#">Movies</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="popularmovie.html">Popular</a></li>
+                      <li><a class="dropdown-item" href="popularmovie.html">Now Playing</a></li>
+                      <li><a class="dropdown-item" href="popularmovie.html">Upcoming</a></li>
+                      <li><a class="dropdown-item" href="popularmovie.html">Top Rated</a></li>
+    
+    
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false" style="color: white;">TV
+                      Shows</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="popularmovie.html">Popular</a></li>
+                      <li><a class="dropdown-item" href="popularmovie.html">Airing Today</a></li>
+                      <li><a class="dropdown-item" href="popularmovie.html">On TV</a></li>
+                      <li><a class="dropdown-item" href="popularmovie.html">Top Rated</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      data-bs-hover="dropdown" aria-expanded="false" style="color: white;">
+                      People
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="people.html">Popular People</a></li>
+    
+    
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      data-bs-hover="dropdown" aria-expanded="false" style="color: white;" aria-current="page"
+                      href="#">More</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+    
+    
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <a href="#">
+                    <i class="fa-solid fa-plus" style="color:white; padding: 15px;"></i>
+                  </a>
+                  <button type="button" class="btn btn-light" data-bs-container="body" data-bs-toggle="popover"
+                    data-bs-placement="bottom" data-bs-content="Language Preferences">
+                    EN
+                  </button>
+                  <a href="#">
+                    <i class="fa-solid fa-bell" style="color: white; padding: 15px;"></i>
+                  </a>
+
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+                <div class="profil">
+                  <a href="">
+                    <img style="width: 50px; height: 50px; border-radius: 25px;" src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- *************** -->
+          </div>
+        </div>
+      </nav>
+      <div class="hero account-img">
+        <div class="row ">
+          <div class="col col-6" >
+          <img  style="width: 200px; height: 200px; border-radius: 50%;" src="./assets/images/persons_img/grey anatom.jpg" alt=""></div>
+          <div class="col col-6">
+  
+            <div class="row  detail-account" style="padding-left: 20px;">
+              <div class="col " style="display: flex; margin-top: 50px;">
+                <a class="h3" style="text-decoration: none; color: white;" href="#">Orziqul95</a>
+                <p class="h6" style="margin-top: 15px; padding-left: 10px; color:darkslategray;">Member since April 2022
+                </p>
+              </div>
+           </div>
+           <div class="row" style="padding-left: 20px;">
+             <div class="col">
+               <h5 class="profile_name" style="color:darkslategray;">orziqul</h5>
+             </div>
+           </div>
+          </div>
+          
+      </div>
+    </header>
+    <section>
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Overview</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Favourite Movies</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Ratins</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><div class="container">
+          <div class="row">
+            <div class="col">
+              <h5 class="h3">Stats</h5>
+            </div>
+            <div class="row lists">
+              <div class="col">
+                <p>Total Edits</p>
+                <p class="h1 text-muted">0</p>
+              </div>
+              <div class="col">
+                <p>Total Ratings</p>
+                <p class="h1 text-muted">0</p>
+              </div>
+              <div class="col">
+                <p>Rating Overview</p>
+              </div>
+              <div class="col">
+                <p>Most Watched Genres</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5 class="h3" style="padding-top: 20px;">Upcoming Form Watchlist</h5>
+              <p>There are no upcoming movies on your watchlist.</p>
+            </div>
+            <div class="col">
+              <a style="text-decoration: none; float: right;" href="#">
+                Go to Watchlist
+              </a>
+            </div>
+          </div>
+    <div class="row">
+      <div class="col" style="margin-top: 20px;">
+        <h5 class="h3">Recent Discussions</h5>
+              <input type="text" style="width: 100%; padding: 10px; border-radius: 5px;" disabled placeholder="You are not watching any discussions.">
+      </div>
+    </div>
+    <div class="row pt-5 pb-5">
+      <div class="col ">
+        <h5 class="h3">Recent Activity</h5>
+        <p>You haven't made any recent edits.</p>
+      </div>
+      <div class="col">
+        <a style="float: right; text-decoration: none;" href="#"> View More</a>
+      </div>
+    </div>
+        </div>
+      </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row" style="display: flex; flex-direction: row;">
+            <div class="col">
+              <div class="container">
+                <div class="row overflow-scroll favMovie-account">
+                  <div class="col" style="display: flex; margin-top: 20px;">
+                    <card class="card">
+                      <a href="#" class="card-img-btn">
+                        <img
+                          class="card-img img-fluid"
+                          src="./assets/images/halo movie.jpg"
+                          alt="something movie"
+                        />
+                      </a>
+                      <div class="card-img-overlay">
+                        <a class="threedot-btn">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-click">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-list"></i>
+                                Add to list</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-heart"></i>
+                                Favourite</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                Watchlist
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-star"></i>
+                                Your rating</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </card>
+                    <div class="col" style="padding-left: 20px;">
+                      <div class="row">
+                        <div class="col">
+                          <div class="circle-progressbar">
+                            <div
+                              role="progressbar"
+                              aria-valuenow="88"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="--value: 88"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <h4><a style="text-decoration: none;" href="#">The Twilight Saga: Eclipse</a></h4>
+                          <p class="text-muted">June 23, 2010</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <p class="text-muted">Bella once again finds herself surrounded by danger as Seattle is 
+                            ravaged by a string of mysterious killings and a malicious vampire continues her quest for 
+                            revenge. In the midst of it all, she is forced to choose between her love for Edward and her 
+                            friendship with Jacob, knowing that her decision has the potential to ignite the ageless struggle 
+                            between vampire and werewolf. With her graduation quickly approaching, Bella is confronted with the most 
+                            important decision of her life.</p>
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <ul style="display: flex; justify-content: space-around;">
+                            <li>
+                              <a href="#" title="Add to list">
+                                <i class="fa-solid fa-list"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" title="Mark as favorite">
+                                <i class="fa-solid fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" title="Mark as favorite">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" title="Rate It">
+                                <i class="fa-solid fa-star"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="row" style="display: flex; flex-direction: row;">
+            <div class="col">
+              <div class="container">
+                <div class="row  Rated">
+                  <div class="col" style="display: flex; margin-top: 20px;">
+                    <card class="card">
+                      <a href="#" class="card-img-btn">
+                        <img
+                          class="card-img img-fluid"
+                          src="./assets/images/halo movie.jpg"
+                          alt="something movie"
+                        />
+                      </a>
+                      <div class="card-img-overlay">
+                        <a class="threedot-btn">
+                          <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-click">
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-list"></i>
+                                Add to list</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-heart"></i>
+                                Favourite</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                Watchlist
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa-solid fa-star"></i>
+                                Your rating</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="circle-progressbar">
+                          <div
+                            role="progressbar"
+                            aria-valuenow="88"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="--value: 88"
+                          ></div>
+                        </div>
+                      </div>
+                    </card>
+                    <div class="col" style="padding-left: 20px;">
+                      <div class="row">
+                        <div class="col">
+                          <h4><a style="text-decoration: none;" href="#">The Twilight Saga: Eclipse</a></h4>
+                          <p class="text-muted">June 23, 2010</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <p class="text-muted">Bella once again finds herself surrounded by danger as Seattle is 
+                            ravaged by a string of mysterious killings and a malicious vampire continues her quest for 
+                            revenge. In the midst of it all, she is forced to choose between her love for Edward and her 
+                            friendship with Jacob, knowing that her decision has the potential to ignite the ageless struggle 
+                            between vampire and werewolf. With her graduation quickly approaching, Bella is confronted with the most 
+                            important decision of her life.</p>
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <ul style="display: flex; justify-content: space-around;">
+                            <li>
+                              <a href="#" title="Add to list">
+                                <i class="fa-solid fa-list"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" title="Mark as favorite">
+                                <i class="fa-solid fa-heart"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" title="Mark as favorite">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#" title="Rate It">
+                                <i class="fa-solid fa-star"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+          </div>
+        </div>
+          </div>
+      </div>
+      
+
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__links">
+            <img
+              class="footer__logo"
+              src="./assets/images/logos/TMDB footer logo.png"
+              alt="brand"
+            />
+            <br />
+            <a href="./profile.html" class="footer__btn"> Hi Your name! </a>
+          </div>
+          <div class="footer__links">
+            <p class="footer__title">the basics</p>
+            <ul class="footer__list">
+              <li>
+                <a href="https://www.themoviedb.org/about">About TMDB</a>
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/about/staying-in-touch"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/talk">Support Forums </a>
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/documentation/api">API</a>
+              </li>
+              <li>
+                <a href="https://status.themoviedb.org/" target="_blank"
+                  >System Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <p class="footer__title">get involved</p>
+            <ul class="footer__list">
+              <li>
+                <a href="https://www.themoviedb.org/bible"
+                  >Contribution Bible</a
+                >
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/movie/new">Add New Movie</a>
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/tv/new">Add New TV Show</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <p class="footer__title">community</p>
+            <ul class="footer__list">
+              <li>
+                <a
+                  href="https://www.themoviedb.org/documentation/community/guidelines"
+                  >Guidelines</a
+                >
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/discuss">Discussions</a>
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/leaderboard">Leaderboard</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/themoviedb" target="_blank"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <p class="footer__title">legal</p>
+            <ul class="footer__list">
+              <li>
+                <a href="https://www.themoviedb.org/terms-of-use"
+                  >Terms of Use</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.themoviedb.org/documentation/api/terms-of-use"
+                  >API Terms of Use</a
+                >
+              </li>
+              <li>
+                <a href="https://www.themoviedb.org/privacy-policy"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/chart.js/dist/chart.js"></script>
+<script type="module" src="./js/router.js"></script>
+ 
+  </body>
+  
+  </html>

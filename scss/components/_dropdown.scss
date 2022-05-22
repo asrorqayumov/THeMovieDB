@@ -1,0 +1,4 @@
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0 !important; // remove the gap so it doesn't close
+}

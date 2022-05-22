@@ -1,0 +1,12 @@
+@import "./utils/variables";
+@import "./base/reset";
+
+@import "./components/dropdown";
+@import "./components/card";
+@import "./components/loader";
+@import "./layout/navigation";
+@import "./layout/footer";
+@import "./pages/index";
+@import "./pages/profile";
+@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/sweetalert2/src/scss/toasts";

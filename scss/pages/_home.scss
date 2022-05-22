@@ -1,0 +1,70 @@
+.overflow-scroll{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    overflow: scroll !important;
+}
+
+.hero {
+  min-height: 300px;
+  height: calc(100vh / 2.5);
+  max-height: 360px;
+  padding: 40px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(3, 37, 65, 0.8) 0%,
+      rgba(3, 37, 65, 0) 100%
+    ),
+    url(../assets/img/bg.jfif);
+  color: #fff;
+  font-size: 15px;
+}
+
+.hero__content span:nth-child(1) {
+  font-size: 45px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.search__form {
+  margin-top: 50px;
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  height: 46px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #b3b3b3;
+  line-height: 46px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+.submit__btn {
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  height: 100%;
+  padding: 10px 26px;
+  background: linear-gradient(
+    to right,
+    rgb(30, 213, 169) 0%,
+    rgba(1, 180, 228) 100%
+  );
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  text-transform: capitalize;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.submit__btn:hover {
+  color: #032541;
+}

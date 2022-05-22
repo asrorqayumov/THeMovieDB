@@ -1,0 +1,361 @@
+.header-movie {
+  background-image: url("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg");
+  border-bottom: 1px solid rgb(2, 2, 88);
+  background-position: right -200px top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  .custom-bg {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(31.5, 31.5, 31.5, 1) 150px,
+      rgba(31.5, 31.5, 31.5, 0.84) 100%
+    );
+    z-index: 1;
+  }
+  .movie-item {
+    padding: 52px;
+    .col-md-4 {
+      img {
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+    .col-md-8 {
+      color: #ffffff;
+      .movie-title {
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        &:hover {
+          color: rgb(189, 204, 216);
+        }
+      }
+      .rating {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .circle-progressbar {
+          position: relative;
+          margin-top: -30px;
+          @keyframes growProgressBar {
+            0%,
+            33% {
+              --pgPercentage: 0;
+            }
+            100% {
+              --pgPercentage: var(--value);
+            }
+          }
+          @property --pgPercentage {
+            syntax: "<number>";
+            inherits: false;
+            initial-value: 0;
+          }
+
+          div[role="progressbar"] {
+            --size: 3.8rem;
+            --bg: #081c22;
+            --fg: rgba(20, 193, 20, 0.757);
+            --pgPercentage: var(--value);
+            animation: growProgressBar 3s 1 forwards;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(
+                closest-side,
+                #081c22 80%,
+                transparent 0 99.9%,
+                white 0
+              ),
+              conic-gradient(
+                var(--fg) calc(var(--pgPercentage) * 1%),
+                var(--bg) 0
+              );
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: calc(var(--size) / 3.5);
+            color: white;
+          }
+
+          div[role="progressbar"]::before {
+            counter-reset: percentage var(--value);
+            content: counter(percentage) "%";
+          }
+        }
+        ul {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          li {
+            margin-right: 20px;
+            button {
+              color: rgb(255, 255, 255);
+              background: none;
+              outline: none;
+              border: none;
+              i {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #032440;
+                margin-right: 5px;
+              }
+            }
+            a [data-addlist="true"],
+            [data-favlist="true"],
+            [data-watchlist="true"],
+            [data-addlist="true"] {
+              color: rgb(190, 7, 7) !important;
+            }
+          }
+        }
+      }
+    }
+    .row {
+      .movie-character {
+        color: #fff;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        &:hover {
+          color: rgb(189, 204, 216);
+        }
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.card-actors {
+  .row {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .row::-webkit-scrollbar {
+    height: 5px !important;
+  }
+  .row::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+  }
+  .card {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    .card-img {
+      img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+    .card-body {
+      padding: 0;
+
+      .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #000;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: #000;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.container {
+  .card-reviews {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: auto !important;
+
+    .card-img-left {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #000;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.collection-card {
+  .card {
+    border: 0px solid !important;
+    border-radius: 15px !important;
+    width: auto !important;
+    .card-img-overlay {
+      background: linear-gradient(
+        to right,
+        rgba(#032440, 1) 0%,
+        rgba(#032440, 0.6) 100%
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .card-title {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .btn,
+      btn-dark {
+        background-color: rgb(22, 20, 20);
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        padding: 10px;
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+  }
+}
+
+.card-movies {
+  .row {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    .card {
+      border: 0px !important;
+      width: 250px;
+      &:hover .card-overlay {
+        visibility: visible;
+        cursor: pointer !important;
+      }
+
+      .card-img-top {
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 141px;
+        border-radius: 7px;
+        object-fit: cover;
+      }
+      .card-img-overlay {
+        display: flex;
+        align-items: flex-end;
+        .card-overlay {
+          visibility: hidden;
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 5px;
+          height: 45px;
+          width: 100%;
+          position: absolute;
+          margin-bottom: 40px;
+          right: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .card-body {
+        padding: 3px !important;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.overflow-scroll::-webkit-scrollbar {
+  height: 6px !important;
+}
+.overflow-scroll::-webkit-scrollbar-thumb {
+  background-color: rgb(206, 206, 206);
+  border-radius: 5px;
+}
+
+.tagline-text {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff;
+  opacity: 0.8;
+}
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -60px;
+  width: auto;
+  background-color: #032541;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  .removebtn {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    padding-right: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+.star-rating :checked ~ label {
+  color: #f90;
+}
+.checked{
+  color: #f90 !important;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}
+
+li.Rating {
+  padding-top: 52px;
+}
+
+.onRating {
+  visibility: visible !important;
+  opacity: 1 !important;
+}

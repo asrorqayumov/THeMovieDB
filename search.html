@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMDB</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./assets/shorticon/favicon.ico" />
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+</head>
+
+<body>
+  <div class="lds-dual-ring"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img style="width: 80%;"
+          src="./assets/images/logos/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="navbarSupportedContent">
+        <!-- *************** -->
+        <div class="offcanvas offcanvas-start" id="offcanvasScrolling">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Offcanvas with backdrop</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  data-bs-hover="dropdown" aria-expanded="false" style="color: white;" aria-current="page"
+                  href="#">Movies</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="popularmovie.html">Popular</a></li>
+                  <li><a class="dropdown-item" href="popularmovie.html">Now Playing</a></li>
+                  <li><a class="dropdown-item" href="popularmovie.html">Upcoming</a></li>
+                  <li><a class="dropdown-item" href="popularmovie.html">Top Rated</a></li>
+
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" data-bs-hover="dropdown" aria-expanded="false" style="color: white;">TV
+                  Shows</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="popularmovie.html">Popular</a></li>
+                  <li><a class="dropdown-item" href="popularmovie.html">Airing Today</a></li>
+                  <li><a class="dropdown-item" href="popularmovie.html">On TV</a></li>
+                  <li><a class="dropdown-item" href="popularmovie.html">Top Rated</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  data-bs-hover="dropdown" aria-expanded="false" style="color: white;">
+                  People
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="people.html">Popular People</a></li>
+
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  data-bs-hover="dropdown" aria-expanded="false" style="color: white;" aria-current="page"
+                  href="#">More</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+
+
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <a href="#">
+                <i class="fa-solid fa-plus" style="color:white; padding: 15px;"></i>
+              </a>
+              <button type="button" class="btn btn-light" data-bs-container="body" data-bs-toggle="popover"
+                data-bs-placement="bottom" data-bs-content="Language Preferences">
+                EN
+              </button>
+              <a href="#">
+                <i class="fa-solid fa-bell" style="color: white; padding: 15px;"></i>
+              </a>
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- *************** -->
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="row__wrapper searchResults">
+
+      <!-- <div class="row shadow-sm p-1 mb-3 bg-white rounded">
+
+        <div class="card mb-3 " >
+          <div class="row ">
+            <div class="col-2">
+              <img style="height: 200px;width: 100%;" src="/assets/images/halo movie.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-10">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="module" src="./js/router.js"></script>
+</body>
+
+</html>

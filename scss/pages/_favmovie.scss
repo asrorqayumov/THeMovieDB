@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lato:ital,wght@1,300&family=Manrope:wght@700&family=Open+Sans&family=Oswald:wght@600&family=Source+Sans+Pro:ital,wght@0,600;1,400&family=Work+Sans&display=swap');
+
+
+.top__movies-wrapper{
+  margin: 0 50px;
+}
+
+.movie__title {
+  font-size: 1.6em;
+  color: #000;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+
+}
+
+.aside{
+  padding-right: 20px;
+}
+
+.accordion-name {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #000;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.list-group-item{
+  font-size: 1em;
+
+}
+.block__btn{
+  font-weight: 900;
+  margin-top: 20px ;
+  margin-bottom: 20px;
+}
+
+#tags{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+
+}
+
+.tag{
+  color: #000;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 45px;
+  outline: 1px solid rgb(105, 104, 104);
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    &:hover{
+      background-color: rgb(89, 231, 249);
+      outline: 1px solid rgb(89, 231, 249);;
+      color: white;
+    }
+}
+#sort_by{
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(214, 212, 212);
+  
+  
+  .select_item{
+    border: none;
+    padding: 3px;
+  }
+}
